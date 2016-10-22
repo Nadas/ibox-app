@@ -1,0 +1,25 @@
+Task 1
+-----------------
+GoogleDriveFileSyncManagerTest class was created with 4 testing methods (testAddFile, testDeleteFile, testUpdateFile, and testGetFileID)
+ for each of the corresponding methods within the main class.
+
+
+Task 2
+-----------------
+On the other hand, GoogleDriveFileSyncManagerIntegrationTest has five test methods, where the fifth one implements a watchDirectory API
+where changes within the directory as also reported. This class was commented out as a whole during the automated testing and testing with 
+Maven processes as it cause some problems due to its connection to the Internet.
+
+Task 3
+-----------------
+"mvn package" command line was successfully used to trigger the testing process as well as generating the .jar file of the project.
+
+Task 4
+-----------------
+This GitHub repo was connected to CircleCI for automated testing. At first @Test annotations were commented out to generate a 
+"NO TESTS" failure, however that didn't work, thus a simple modification to one of the assert lines was reversed to trigger a
+failure. The GoogleDriveFileSyncManagerIntegrationTest was also commented out during this task.
+
+Task 5 and 6
+-----------------
+Cobertura, CheckStyle and FindBugs were integrated to the build process.
