@@ -18,7 +18,7 @@ Task 4
 -----------------
 This GitHub repo was connected to CircleCI for automated testing. At first @Test annotations were commented out to generate a 
 "NO TESTS" failure, however that didn't work, thus a simple modification to one of the assert lines was reversed to trigger a
-failure. The GoogleDriveFileSyncManagerIntegrationTest was also commented out during this task.
+failure. The GoogleDriveFileSyncManagerIntegrationTest was also commented out during this task. However, the commit Final Code has a canceled circleCi build as the Integration Test file was return to normal (not commented out) and I had to cancel the build to avoid an unnecessary failure.
 
 Task 5 and 6
 -----------------
