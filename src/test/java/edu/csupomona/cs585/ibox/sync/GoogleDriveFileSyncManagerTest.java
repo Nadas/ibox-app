@@ -80,7 +80,7 @@ public class GoogleDriveFileSyncManagerTest {
 		fileList.setItems(list);
 	}
 
-	//@Test
+	@Test
 	public void testAddFile() throws IOException {
 
 		Insert mockInsert = mock(Insert.class);
@@ -100,11 +100,12 @@ public class GoogleDriveFileSyncManagerTest {
 		addFileToList();
 		when(mockFiles.list()).thenReturn(mockList);
 		when(mockList.execute()).thenReturn(fileList);
-		assertNotNull(mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
+		//assertNotNull(mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
+		assertNull(mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
 		assertEquals("unitTestFileID", mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
 	}
 
-	//@Test
+	@Test
 	public void testUpdateFile() throws IOException {
 
 		Update mockUpdate = mock(Update.class);
@@ -121,7 +122,7 @@ public class GoogleDriveFileSyncManagerTest {
 		assertEquals("unitTestFileID", mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
 	}
 
-	//@Test
+	@Test
 	public void testDeleteFile() throws IOException {
 
 		Delete mockDelete = mock(Delete.class);
@@ -138,7 +139,7 @@ public class GoogleDriveFileSyncManagerTest {
 		verify(mockDelete).execute();
 	}
 
-	//@Test
+	@Test
 	public void testGetFileId() throws IOException {
 		addFileToList();
 
