@@ -1,4 +1,4 @@
-/*package edu.csupomona.cs585.ibox.sync;
+package edu.csupomona.cs585.ibox.sync;
 
 import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
 import static java.nio.file.StandardWatchEventKinds.ENTRY_DELETE;
@@ -143,4 +143,4 @@ class WatcherThread extends Thread{
 	public void setRunning(boolean running) {
 		this.running = running;
 	}
-}*/
+}

@@ -100,8 +100,8 @@ public class GoogleDriveFileSyncManagerTest {
 		addFileToList();
 		when(mockFiles.list()).thenReturn(mockList);
 		when(mockList.execute()).thenReturn(fileList);
-		//assertNotNull(mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
-		assertNull(mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
+		assertNotNull(mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
+		//assertNull(mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
 		assertEquals("unitTestFileID", mockGoogleDriveMgr.getFileId("unitTestFile.txt"));
 	}
 
